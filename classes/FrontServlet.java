@@ -4,6 +4,9 @@ import model.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
+import etu1817.framework.*;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,6 +15,8 @@ import model.Utilitaire;
 
 
 public class FrontServlet extends HttpServlet {
+
+    HashMap<String, Mapping> MappingUrl; 
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
